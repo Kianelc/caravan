@@ -11,8 +11,41 @@
 </head>
 
 <body>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginEmail">E-mail</label>
+                            <input type="email" class="form-control" id="loginEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginSenha">Senha</label>
+                            <input type="password" class="form-control" id="loginSenha">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+                        <small class="form-text text-muted">Esqueceu sua senha? <a href="#">Clique aqui</a>.</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fecha Modal -->
+
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="img/caravan.svg" alt="Caravan">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -39,7 +72,8 @@
                     <a class="nav-link" href="contato.html">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin"
+                        data-whatever="@mdo">Login</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a>
@@ -176,37 +210,52 @@
         <div class="row justify-content-center">
             <div class="col-md-6" id="perguntasFrequentes" data-children=".pergunta">
                 <div class="pergunta py-2">
-                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta1" aria-expanded="true" aria-controls="pergunta1">Lorem ipsum dolor sit amet?</a>
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta1"
+                        aria-expanded="true" aria-controls="pergunta1">Lorem ipsum dolor sit amet?</a>
                     <div id="pergunta1" class="collapse show" role="tabpanel">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo.</p>
                     </div>
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="pergunta py-2">
-                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta2" aria-expanded="true" aria-controls="pergunta2">Lorem ipsum dolor sit amet?</a>
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta2"
+                        aria-expanded="true" aria-controls="pergunta2">Lorem ipsum dolor sit amet?</a>
                     <div id="pergunta2" class="collapse" role="tabpanel">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo.</p>
                     </div>
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="pergunta py-2">
-                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta3" aria-expanded="true" aria-controls="pergunta3">Lorem ipsum dolor sit amet?</a>
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta3"
+                        aria-expanded="true" aria-controls="pergunta3">Lorem ipsum dolor sit amet?</a>
                     <div id="pergunta3" class="collapse" role="tabpanel">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo.</p>
                     </div>
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="pergunta py-2">
-                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta4" aria-expanded="true" aria-controls="pergunta4">Lorem ipsum dolor sit amet?</a>
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta4"
+                        aria-expanded="true" aria-controls="pergunta4">Lorem ipsum dolor sit amet?</a>
                     <div id="pergunta4" class="collapse" role="tabpanel">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo.</p>
                     </div>
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="pergunta py-2">
-                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta5" aria-expanded="true" aria-controls="pergunta5">Lorem ipsum dolor sit amet?</a>
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta5"
+                        aria-expanded="true" aria-controls="pergunta5">Lorem ipsum dolor sit amet?</a>
                     <div id="pergunta5" class="collapse" role="tabpanel">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo.</p>
                     </div>
                 </div>
                 <div class="dropdown-divider"></div>
@@ -218,7 +267,7 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white">
+    <footer class="bg-dark text-white mt-5">
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-3 col-6">
@@ -256,9 +305,12 @@
                         <strong>Redes Sociais</strong>
                     </h4>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="rede-social btn btn-outline-secondary btn-block btn-sm mb-2">Facebook</a></li>
-                        <li><a href="#" class="rede-social btn btn-outline-secondary btn-block btn-sm mb-2">Twitter</a></li>
-                        <li><a href="#" class="rede-social btn btn-outline-secondary btn-block btn-sm mb-2">Youtube</a></li>
+                        <li><a href="#" class="rede-social btn btn-outline-secondary btn-block btn-sm mb-2">Facebook</a>
+                        </li>
+                        <li><a href="#" class="rede-social btn btn-outline-secondary btn-block btn-sm mb-2">Twitter</a>
+                        </li>
+                        <li><a href="#" class="rede-social btn btn-outline-secondary btn-block btn-sm mb-2">Youtube</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -280,6 +332,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
