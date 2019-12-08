@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Caravan - Inscrição</title>
+</head>
+
+<body>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginEmail">E-mail</label>
+                            <input type="email" class="form-control" id="loginEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginSenha">Senha</label>
+                            <input type="password" class="form-control" id="loginSenha">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+                        <small class="form-text text-muted">Esqueceu sua senha? <a href="#">Clique aqui</a>.</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fecha Modal -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/caravan.svg" alt="Caravan">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Locais
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="local.html">California</a>
+                        <a class="dropdown-item" href="local.html">Paris</a>
+                        <a class="dropdown-item" href="local.html">Dublin</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="planos.html">Planos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin"
+                        data-whatever="@mdo">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary ml-md-2" href="inscricao.html">Inscreva-se</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="my-5 text-center">
+            <span class="h6 d-block text-uppercase">Lorem ipsum dolor sit amet</span>
+            <h1 class="display-4 text-primary">Lorem ipsum</h1>
+        </div>
+        <div class="row">
+            <form class="col-lg-6">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputNome">Nome</label>
+                        <input type="text" class="form-control" id="inputNome" placeholder="Nome Completo">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCpf">CPF</label>
+                        <input type="text" class="form-control" id="inputCpf" placeholder="xxx.xxx.xxx-xx">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">E-mail</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputSenha">Senha</label>
+                        <input type="password" class="form-control" id="inputSenha" placeholder="Senha">
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="inputEndereco">Endereço</label>
+                        <input type="text" class="form-control" id="inputEndereco" placeholder="Endereço">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCidade">Cidade</label>
+                        <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+                    </div>
+                    <div class="form-group col-md-3 col-6">
+                        <label for="inputEstado">Estado</label>
+                        <select class="form-control bg-light" id="inputEstado">
+                            <option>Estado</option>
+                            <option>SC</option>
+                            <option>SP</option>
+                            <option>BH</option>
+                            <option>RJ</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3 col-6">
+                        <label for="inputCep">CEP</label>
+                        <input type="text" class="form-control" id="inputCep" placeholder="xxxxx-xxx">
+                    </div>
+                </div>
+
+                <div class="form-group p-3 bg-light rounded box-shadow">
+                    <h2 class="h6 text-uppercase text-primary">Lorem ipsum</h2>
+                    <nav class="nav btn-group mb-3" id="formaPagamento" role="tablist">
+                        <button type="button" class="btn btn-secondary btn-sm active" id="cartao-nav" data-toggle="tab"
+                            href="#cartao" role="tab" aria-controls="cartao" aria-selected="true">
+                            Lorem ipsum
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="boleto-nav" data-toggle="tab"
+                            href="#boleto" role="tab" aria-controls="boleto" aria-selected="false">
+                            Lorem ipsum
+                        </button>
+                    </nav>
+                    <div class="tab-content" id="formaPagamentoConteudo">
+                        <div class="tab-pane fade show active" id="cartao" role="tabpanel" aria-labelledby="cartao-nav">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputNomeCartao">Nome do Cartão</label>
+                                    <input type="text" class="form-control" id="inputNomeCartao"
+                                        placeholder="Nome impresso no cartão">
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="inputExpiraMes">Mês</label>
+                                    <select class="form-control bg-light" id="inputExpiraMes">
+                                        <option>Expira Mês</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="inputExpiraAno">Ano</label>
+                                    <select class="form-control bg-light" id="inputExpiraAno">
+                                        <option>Expira Ano</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputNumeroCartao">Número do Cartão</label>
+                                    <input type="text" class="form-control" id="inputNumeroCartao"
+                                        placeholder="XXXX XXXX XXXX XXX">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputCodigoSeguranca">Código de Segurança</label>
+                                    <input type="text" class="form-control" id="inputCodigoSeguranca" placeholder="XXX">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="boleto" role="tabpanel" aria-labelledby="boleto-nav">
+                            <p class="lead">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                                Lorem ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Concordo com os <a href="#">Termos e Condições</a>.
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg mt-2">Contratar Plano</button>
+            </form>
+            <div class="col-lg-5 mx-auto order-first order-lg-1 mb-5">
+                <h2 class="h6 text-primary">Lorem ipsum</h2>
+                <div class="p-4 bg-light rounded box-shadow">
+                    <h2>Platinum <span class="badge badge-success">Novo</span></h2>
+                    <ul class="lista-plano list-unstyled">
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit</li>
+                    </ul>
+                    <form>
+                        <div class="form-group">
+                            <select class="form-control bg-light" id="inputCidades">
+                                <option>Selecione a cidade</option>
+                                <option>California</option>
+                                <option>Paris</option>
+                                <option>Dublin</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <span class="h4"><strong>R$7.500</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6 text-uppercase">
+                        <strong>Páginas</strong>
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li><a href="planos.html">Planos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="inscricao.html">Inscreva-se</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="h6 text-uppercase">
+                        <strong>Locais</strong>
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li><a href="local.html">California</a></li>
+                        <li><a href="local.html">Paris</a></li>
+                        <li><a href="local.html">Dublin</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h6 text-uppercase">
+                        <strong>Dados de Contato</strong>
+                    </h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>loremipsum@dolor.sit.amet</li>
+                        <li>(xx) xxxx-xxxx</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="h6 text-uppercase">
+                        <strong>Redes Sociais</strong>
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="rede-social btn btn-outline-secondary btn-block btn-sm mb-2">Facebook</a>
+                        </li>
+                        <li><a href="#" class="rede-social btn btn-outline-secondary btn-block btn-sm mb-2">Twitter</a>
+                        </li>
+                        <li><a href="#" class="rede-social btn btn-outline-secondary btn-block btn-sm mb-2">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-center py-3">
+            <p class="mb-0">
+                Cover template for Bootstrap, by @mdo.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>
